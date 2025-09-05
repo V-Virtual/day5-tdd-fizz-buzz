@@ -39,6 +39,17 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void should_return_Buzz_when_input_multiple_Of_7() {
+        //Given
+        int number = 7;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //When
+        String result = fizzBuzz.countOff(number);
+        //Then
+        assertEquals("Whizz", result);
+    }
+
+    @Test
     public void should_return_Buzz_when_input_multiple_Of_3_and_5() {
         //Given
         int number = 15;
