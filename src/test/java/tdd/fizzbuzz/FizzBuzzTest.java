@@ -59,4 +59,15 @@ public class FizzBuzzTest {
         //Then
         assertEquals("FizzBuzz", result);
     }
+
+    @Test
+    public void should_return_Buzz_when_input_multiple_Of_3_and_7() {
+        //Given
+        int number = 21;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //When
+        String result = fizzBuzz.countOff(number);
+        //Then
+        assertEquals("FizzWhizz", result);
+    }
 }
