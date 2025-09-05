@@ -26,4 +26,15 @@ public class FizzBuzzTest {
         //Then
         assertEquals("Fizz", result);
     }
+
+    @Test
+    public void should_return_Buzz_when_input_multiple_Of_5() {
+        //Given
+        int number = 5;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //When
+        String result = fizzBuzz.countOff(number);
+        //Then
+        assertEquals("Buzz", result);
+    }
 }
